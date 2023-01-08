@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poeticbox</title>
+   
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+</head>
+
+<a-assets>
+    <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    <img id="clim1" src="./clim1.jpg"> 
+    <img id="clim3" src="./clim3.jpg">
+</a-assets>
+<body>
+    <a-scene>
+    <a-entity id="rain" particle-system="preset: rain; color: #f9fafa; particleCount: 5000"></a-entity>
+    <a-image src= "#clim1" material="side: double; alphatest: 0.5s" scale= "5 5 5" position="-12.320 2.675 -14.605" rotation= "0.00  0.00  0.00"></a-image>
+    <a-image src= "#clim3" material="side: double; alphatest: 0.5s" scale= "5 5 5" position="12.306 2.536 14.988" rotation= "0.00  180.000  0.00"></a-image>
+
+    <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" scale= "0.2 0.2 0.2" color="#78CEAD"></a-plane>
+    <a-sky color="#000000"></a-sky>
+    <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
+    
+    <a-entity position= "-12.797 8.539 -16.117" rotation= "0.00  0.00  0.00" text-geometry="value: Leaves as snowflakes"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "-8.542 6.721 -16.117" rotation= "0.00  0.00  0.00" text-geometry="value: falling and falling"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "-4.932 4.949 -16.117" rotation= "0.00  0.00  0.00" text-geometry="value: freaking and freaking"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "0.376 2.947 -16.117" rotation= "0.00  0.00  0.00" text-geometry="value: fucking and fucking"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "12.910 8.147 15.036" rotation= "0.00  180 0.00" text-geometry="value: Leaves as snowflakes"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "5.790 5.794 15.359" rotation= "0.00  180  0.00" text-geometry="value: liking and liking"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "1.283 3.775 15.802" rotation= "0.00  180  0.00" text-geometry="value: living and living"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    <a-entity position= "-0.874 1.538 15.590" rotation= "0.00  180  0.00" text-geometry="value: leaving and leaving"  material= "shader: flat; color: #FFFFFF;" scale= "2 2 2"></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+
+</body>
+</html>
